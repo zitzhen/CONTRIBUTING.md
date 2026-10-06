@@ -1,152 +1,154 @@
 # Contributing to ZIT Studio
 
-感谢您对 **ZIT Studio** 项目的关注与贡献！🎉
+**🌐 Language:** **English** · [简体中文](CONTRIBUTING.zh-Hans.md) · [繁體中文](CONTRIBUTING.zh-Hant.md)
 
-我们欢迎通过 **GitHub Pull Request** 或 **电子邮件列表（Mailing List）** 提交代码、文档、修复和其他改进。
+Thank you for your interest in and contributions to the **ZIT Studio** project! 🎉
 
-在参与贡献之前，请阅读并遵守：
+We welcome code, documentation, fixes, and other improvements submitted through **GitHub Pull Requests** or our **mailing list**.
 
-- 本项目的 `LICENSE` 文件
-- [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
-- 项目仓库中的其他贡献指南或开发文档
+Before you contribute, please read and comply with:
 
-> **安全漏洞请勿通过 GitHub Issue、Pull Request 或电子邮件列表公开提交。**
-> 请按照项目提供的安全漏洞报告流程进行报告。
+- This project's `LICENSE` file
+- The [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/)
+- Any other contributing guidelines or development documentation in the project repositories
 
----
-
-## 1. GitHub Pull Request
-
-如果您拥有 GitHub 账号，我们推荐使用 **Pull Request（PR）** 提交贡献。
-
-### 基本流程
-
-1. Fork 本项目仓库。
-2. 创建用于修改的分支。
-3. 完成您的修改。
-4. 在本地测试您的修改。
-5. 提交 Git commit。
-6. 将分支推送到您的 Fork。
-7. 创建 Pull Request。
-8. 等待 Maintainer 审核。
-
-请尽量保持每个 Pull Request 的目的明确。
-
-例如：
-
-- 一个 Bug 修复对应一个 PR
-- 一个功能对应一个 PR
-- 不相关的格式化或重构不要与其他修改混在同一个 PR 中
-
-### Commit
-
-请尽量使用清晰、简洁且具有描述性的 commit message。
-
-如果一个修改可以拆分成多个逻辑独立的 commit，我们鼓励保持这些 commit 的独立性。
-
-Maintainer 可能会要求您修改、压缩（squash）或重新整理 commit。
+> **Please do not report security vulnerabilities publicly through GitHub Issues, Pull Requests, or the mailing list.**
+> Follow the security reporting process provided by the project instead.
 
 ---
 
-## 2. 电子邮件列表
+## 1. GitHub Pull Requests
 
-ZIT Studio 同时支持通过电子邮件列表提交贡献。
+If you have a GitHub account, we recommend submitting contributions via a **Pull Request (PR)**.
 
-这意味着：
+### Basic workflow
 
-> **您不需要拥有 GitHub 账号，也可以向 ZIT Studio 的项目提交代码。**
+1. Fork the project repository.
+2. Create a branch for your changes.
+3. Make your changes.
+4. Test your changes locally.
+5. Commit your changes with Git.
+6. Push the branch to your fork.
+7. Open a Pull Request.
+8. Wait for a Maintainer to review it.
 
-我们的代码贡献邮件列表：
+Please keep the purpose of each Pull Request as focused as possible.
+
+For example:
+
+- One bug fix per PR
+- One feature per PR
+- Do not mix unrelated formatting or refactoring into the same PR as other changes
+
+### Commits
+
+Please use clear, concise, and descriptive commit messages.
+
+If a change can be split into several logically independent commits, we encourage you to keep those commits separate.
+
+Maintainers may ask you to amend, squash, or reorganize your commits.
+
+---
+
+## 2. Mailing List
+
+ZIT Studio also accepts contributions through its mailing list.
+
+This means:
+
+> **You do not need a GitHub account to contribute code to ZIT Studio projects.**
+
+Our code contribution mailing list:
 
 **zit-studio-code@googlegroups.com**
 
 [ZIT Studio Code Mailing List](https://groups.google.com/g/zit-studio-code?utm_source=chatgpt.com)
 
-您可以通过电子邮件发送 Git patch、代码审查请求以及其他与代码贡献相关的内容。
+You can use email to send Git patches, code review requests, and other content related to code contributions.
 
-### 2.1 提交补丁
+### 2.1 Submitting patches
 
-在发送补丁之前，请先确认：
+Before sending a patch, please make sure that:
 
-- 您的修改符合本项目的贡献指南。
-- 您的修改符合项目所使用的许可证。
-- 您没有提交与项目许可证不兼容的代码或其他受限制的内容。
-- 您已经在本地完成必要的测试。
-- 您没有在邮件列表中公开提交安全漏洞。
+- Your changes comply with this project's contributing guidelines.
+- Your changes comply with the license used by the project.
+- You are not submitting code or other restricted content that is incompatible with the project's license.
+- You have completed the necessary testing locally.
+- You have not publicly submitted security vulnerabilities to the mailing list.
 
-如果您知道相关项目的 Maintainer，可以直接将邮件发送给对应的 Maintainer，并将：
+If you know the Maintainer of the relevant project, you can email that Maintainer directly and add:
 
 `zit-studio-code@googlegroups.com`
 
-加入收件人或抄送列表。
+to the To or Cc list.
 
-如果您不知道应该联系哪位 Maintainer，可以直接联系：
+If you are not sure which Maintainer to contact, you can contact:
 
 **Oliver Lin — <oliver@liuxiaozhen.dev>**
 
 ---
 
-## 3. 邮件补丁格式
+## 3. Email Patch Format
 
-我们推荐使用 Git 原生的邮件补丁工作流，例如：
+We recommend the native Git email patch workflow, for example:
 
 ```bash
 git format-patch
 git send-email
 ```
 
-邮件补丁应尽可能保留 Git commit 的完整信息，包括：
+Email patches should preserve as much of the Git commit information as possible, including:
 
 - Author
 - Commit message
 - Commit body
 - Patch
-- Signed-off-by（如果项目要求）
+- Signed-off-by (if required by the project)
 
-如果项目另有具体要求，请以项目仓库中的说明为准。
+If a project has additional specific requirements, follow the instructions in that project's repository.
 
 ---
 
-## 4. 邮件主题
+## 4. Email Subject
 
-为了方便邮件列表中的成员识别和处理补丁，请在邮件主题中包含：
+To make it easier for mailing list members to identify and process patches, please include the following in the email subject:
 
 ```text
 [repository-name]
 ```
 
-例如：
+For example:
 
 ```text
 [patchsplit] Add GitLab patch support
 ```
 
-或者：
+Or:
 
 ```text
 [CoCo-Community] Fix XSS sanitization
 ```
 
-如果您使用 `git format-patch` 或 `git send-email`，请尽量保持 Git 自动生成的 patch 信息，不要手动破坏其格式。
+If you use `git format-patch` or `git send-email`, please preserve the patch information generated automatically by Git as much as possible, and do not manually break its formatting.
 
 ---
 
-## 5. 邮件格式
+## 5. Email Format
 
-提交代码补丁时，请优先使用 **纯文本（Plain Text）**。
+When submitting code patches, prefer **plain text**.
 
-请避免发送仅包含 HTML 格式的补丁，因为 HTML 邮件可能影响 Git 对邮件补丁的识别和处理。
+Please avoid sending patches in HTML-only format, because HTML emails may affect Git's ability to recognize and process email patches.
 
-### 回复邮件
+### Replying to emails
 
-回复邮件时：
+When replying to an email:
 
-- 请勿附带完整的上一封邮件原文。
-- 请勿复制客户端生成的完整 HTML 内容。
-- 如有必要，请使用 `>` 引用之前的内容。
-- 请尽量只引用与当前回复相关的部分。
+- Do not attach the entire previous email.
+- Do not copy the full HTML content generated by your email client.
+- If necessary, quote the previous content using `>`.
+- Please quote only the parts relevant to your current reply.
 
-例如：
+For example:
 
 ```text
 > This patch needs additional tests.
@@ -154,125 +156,125 @@ git send-email
 Added the missing tests in the new commit.
 ```
 
-请避免：
+Please avoid:
 
 ```text
 > > > > > > > > > > > > > > > > > > > > >
-> 大量完整的历史邮件内容……
-> 大量完整的历史邮件内容……
-> 大量完整的历史邮件内容……
+> Large amounts of full historical email content...
+> Large amounts of full historical email content...
+> Large amounts of full historical email content...
 ```
 
-这样可以减少邮件列表中的噪音，并方便其他 Contributors 阅读和审查。
+This reduces noise on the mailing list and makes it easier for other Contributors to read and review.
 
 ---
 
-## 6. GitHub 与 Mailing List 的关系
+## 6. Relationship Between GitHub and the Mailing List
 
-GitHub Pull Request 和电子邮件列表是 **两种等价的贡献入口**。
+GitHub Pull Requests and the mailing list are **two equivalent contribution channels**.
 
-您可以根据自己的情况选择：
+You can choose according to your situation:
 
-| 方式 | 是否需要 GitHub 账号 | 推荐场景 |
+| Method | GitHub account required | Recommended scenario |
 | --- | --- | --- |
-| GitHub Pull Request | 是 | 普通开发、代码审查 |
-| Email Mailing List | 否 | 邮件工作流、没有 GitHub 账号的 Contributors |
+| GitHub Pull Request | Yes | General development, code review |
+| Email Mailing List | No | Email workflows, Contributors without a GitHub account |
 
-通过邮件列表提交的补丁同样会经过 Maintainer 的审核。
+Patches submitted through the mailing list go through the same Maintainer review.
 
-Maintainer 可以要求 Contributor：
+Maintainers may ask a Contributor to:
 
-- 修改补丁
-- 补充测试
-- 修改 commit message
-- 拆分或合并 commit
-- 重新发送 patch
-- 通过 GitHub Pull Request 提交后续修改
+- Revise the patch
+- Add tests
+- Modify the commit message
+- Split or squash commits
+- Resend the patch
+- Submit follow-up changes through a GitHub Pull Request
 
 ---
 
 ## 7. Code Review
 
-所有代码贡献都需要经过适当的审核。
+All code contributions require appropriate review.
 
-Maintainer 可能会从以下方面进行检查：
+Maintainers may check the following:
 
-- 功能是否正确
-- 是否存在明显 Bug
-- 是否存在安全问题
-- 是否有足够的测试
-- 代码是否符合项目风格
-- API 或行为是否保持兼容
-- 依赖及许可证是否合适
-- commit 历史是否清晰
+- Whether the functionality is correct
+- Whether there are obvious bugs
+- Whether there are security issues
+- Whether there is sufficient testing
+- Whether the code follows the project's style
+- Whether the API or behavior remains compatible
+- Whether the dependencies and licenses are appropriate
+- Whether the commit history is clear
 
-提交贡献并不意味着贡献一定会被接受。
+Submitting a contribution does not mean the contribution will necessarily be accepted.
 
-Maintainer 有权要求修改或拒绝不符合项目目标、质量标准或许可证要求的贡献。
+Maintainers have the right to request changes to, or reject, contributions that do not meet the project's goals, quality standards, or license requirements.
 
 ---
 
-## 8. 许可证与版权
+## 8. License and Copyright
 
-提交贡献时，您必须确保自己有权提交这些内容。
+When you submit a contribution, you must ensure that you have the right to submit it.
 
-除非项目另有说明，您提交的代码应当能够在本项目所使用的许可证下合法分发。
+Unless the project states otherwise, the code you submit must be legally distributable under the license used by this project.
 
-请勿提交：
+Please do not submit:
 
-- 未经授权的第三方代码
-- 与项目许可证不兼容的代码
-- 从其他项目复制但没有确认许可证兼容性的代码
-- 您没有权利重新分发的资源
+- Unauthorized third-party code
+- Code that is incompatible with the project's license
+- Code copied from other projects without confirming license compatibility
+- Assets that you do not have the right to redistribute
 
-如果您的贡献包含第三方代码，请在提交前确认其许可证以及与本项目许可证的兼容性，并按照相应许可证要求保留必要的版权及许可证声明。
+If your contribution includes third-party code, please confirm its license and its compatibility with this project's license before submitting, and retain the necessary copyright and license notices as required by the relevant license.
 
 ---
 
 ## 9. Developer Certificate of Origin
 
-如果项目要求 Developer Certificate of Origin（DCO），请在 commit 中添加：
+If a project requires the Developer Certificate of Origin (DCO), add the following to your commit:
 
 ```text
 Signed-off-by: Your Name <your@email.example>
 ```
 
-例如：
+For example:
 
 ```bash
 git commit -s -m "Add GitLab patch support"
 ```
 
-如果具体项目启用了 DCO，请以该项目的要求为准。
+If a specific project has DCO enabled, follow that project's requirements.
 
 ---
 
-## 10. 安全问题
+## 10. Security Issues
 
-**请勿通过以下公开渠道报告安全漏洞：**
+**Please do not report security vulnerabilities through the following public channels:**
 
 - GitHub Issues
 - GitHub Pull Requests
 - Mailing List
-- 公开的项目讨论区
+- Public project discussion areas
 
-安全漏洞应通过项目提供的安全报告渠道进行报告。
+Security vulnerabilities should be reported through the security reporting channel provided by the project.
 
-如果您不确定应该向哪里报告安全问题，请先联系项目 Maintainer，而不要将漏洞细节公开发布。
+If you are unsure where to report a security issue, contact the project Maintainer first rather than publishing the vulnerability details publicly.
 
 ---
 
-## 11. 行为准则
+## 11. Code of Conduct
 
-所有 Contributors、Maintainers 和其他社区成员都必须遵守：
+All Contributors, Maintainers, and other community members must follow:
 
 **Contributor Covenant Code of Conduct**
 
-我们希望 ZIT Studio 成为一个开放、友善、尊重且适合协作的开源社区。
+We want ZIT Studio to be an open, friendly, respectful, and collaborative open-source community.
 
 ---
 
-## 12. 联系方式
+## 12. Contact
 
 ### Code Mailing List
 
@@ -288,9 +290,9 @@ git commit -s -m "Add GitLab patch support"
 
 ---
 
-感谢您的贡献！❤️
+Thank you for your contributions! ❤️
 
-无论您通过 GitHub Pull Request 还是电子邮件列表参与，我们都非常欢迎您的贡献。
+Whether you take part through GitHub Pull Requests or the mailing list, we warmly welcome your contributions.
 
 **ZIT Studio**
 
